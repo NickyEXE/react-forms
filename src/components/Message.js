@@ -5,7 +5,6 @@ class Message extends React.Component {
 
   state = {
     numberOfLikes: 0,
-    potato: "idaho"
   }
 
   // constructor(){
@@ -18,10 +17,6 @@ class Message extends React.Component {
   }
 
   render(){
-    console.log(this.state)
-    // function onClick(){
-    //   console.log("cheese")
-    // }
     return (<li> { this.props.text } <LikeButton onClick={this.onClick} numberOfLikes={this.state.numberOfLikes}/> </li>)
   }
 }
